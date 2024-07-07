@@ -1,0 +1,107 @@
+.registerContainer {
+  display: flex;
+  border-top: 2px solid var(--lightblue-color);
+  border-bottom: 2px solid var(--lightblue-color);
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  gap: 1rem;
+  background-color: var(--blackish-color);
+}
+.formContainer {
+  width: 50%;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: white;
+}
+.registerform {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: var(--dark-blue);
+  color: var(--lightblue-color);
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.registerform input {
+  height: 2.5rem;
+  border-radius: 10px;
+  padding: 1rem;
+  border: none;
+}
+.registerform input:focus {
+  border-bottom: 2px solid black;
+}
+.selectdropdown {
+  padding: 1rem 0.5rem 4rem 0.5rem;
+}
+.selectdropdown select {
+  width: 100%;
+}
+.registerform p {
+  font-size: 1rem;
+  font-family: var(--primary-font);
+  text-transform: capitalize;
+  color: white;
+}
+.registerform label {
+  text-transform: capitalize;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.linkclass {
+  color: var(--lightblue-color);
+}
+.registerform button {
+  margin: 1rem;
+  height: 3rem;
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-family: var(--secondary-font);
+  cursor: pointer;
+  background-color: var(--lightblue-color);
+  color: var(--dark-blue);
+  border: none;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+.registerform button:hover {
+  background-color: var(--blackish-color);
+  color: white;
+  border: 2px solid var(--lightblue-color);
+}
+.registerIMg {
+  width: 40%;
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+.registerIMg img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 2s ease-in-out;
+}
+.registerIMg img:hover {
+  transform: scale(1.2);
+}
+@media screen and (max-width: 1000px) {
+  .registerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .formContainer {
+    width: 98vw;
+  }
+  .registerIMg {
+    width: 98vw;
+  }
+}

@@ -1,0 +1,16 @@
+.IconLinks {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+}
+.IconLinks svg {
+  font-size: 1.5rem;
+  transition: all 1s;
+  color: var(--lightblue-color);
+}
+.IconLinks svg:hover {
+  fill: var(--primary-color);
+  transform: translateY(-4px);
+}

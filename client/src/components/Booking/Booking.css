@@ -1,0 +1,51 @@
+.bookingContainer {
+  min-height: 60vh;
+
+  display: flex;
+  padding: 2rem;
+  padding-top: 1rem;
+  background-color: white;
+  align-items: center;
+  flex-direction: column;
+}
+.bookingActual {
+  border: 2px solid white;
+  padding: 2rem;
+  background-color: var(--blackish-color);
+  display: flex;
+  margin-top: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.bookingImg {
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  display: flex;
+}
+.bookingImg svg {
+  font-size: 3rem;
+  fill: white;
+}
+.bookingImg p {
+  font-size: 2rem;
+  color: white;
+  font-family: var(--primary-font);
+}
+.bookingEmail button {
+  font-weight: 800;
+  border-radius: 10px;
+  border: none;
+  padding: 1rem;
+  text-transform: capitalize;
+  font-family: var(--primary-font);
+  background-color: var(--lightblue-color);
+  color: var(--dark-blue);
+  cursor: pointer;
+}

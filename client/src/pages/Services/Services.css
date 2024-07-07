@@ -1,0 +1,97 @@
+.servicesContainer {
+  min-height: 100vh;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.actualServices {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.serviceContainer {
+  width: 20rem;
+  background-color: var(--blackish-color);
+  color: var(--lightblue-color);
+  /* border: 2px solid var(--lightblue-color); */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.serviceImage {
+  width: 100%;
+  /* height: 15rem; */
+  /* border: 2px solid green; */
+  position: relative;
+  overflow: hidden;
+  transition: all 2s;
+  border-radius: 10px;
+}
+.serviceImage:hover {
+  /* overflow: visible; */
+  .serviceName {
+    transform: none;
+  }
+}
+.serviceImage img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.serviceName {
+  position: absolute;
+  transition: all 1s;
+  /* left: 0; */
+  border-radius: 10px;
+  padding: 0.5rem;
+  bottom: 0;
+  background-color: var(--blackish-color);
+  color: var(--lightblue-color);
+  transform: translateY(45px);
+}
+.serviceName p {
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.serviceInfo {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.serviceText {
+  font-family: var(--primary-font);
+}
+.serviceCta {
+  font-family: var(--secondary-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--lightblue-color);
+}
+.serviceCta button {
+  font-size: 1rem;
+  text-transform: capitalize;
+  background-color: var(--lightblue-color);
+  color: var(--blackish-color);
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 1s;
+  font-weight: bold;
+}
+.serviceCta button:hover {
+  background-color: var(--blackish-color);
+  color: var(--lightblue-color);
+  border: 2px solid var(--lightblue-color);
+}

@@ -1,0 +1,66 @@
+.doctorsContainer {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.actualDoctors {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+.doctors {
+  width: 15rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blackish-color);
+  color: var(--lightblue-color);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  transition: all 0.5s;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.doctors:hover {
+  transform: translateY(-9px);
+  background-color: var(--dark-blue);
+  color: white;
+  border: 2px solid var(--blackish-color);
+}
+.doctorImage {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* margin-top: -50px; */
+}
+.doctorImage img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.doctorInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--secondary-font);
+}
+.iconBox {
+  display: flex;
+}

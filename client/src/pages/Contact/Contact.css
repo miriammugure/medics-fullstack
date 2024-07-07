@@ -1,0 +1,207 @@
+.form {
+  min-height: 100vh;
+  border-top: 2px var(--lightblue-color) solid;
+  border-bottom: 2px var(--lightblue-color) solid;
+  background-color: var(--blackish-color);
+}
+.formContacts {
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+}
+.input-form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+
+  width: 50%;
+  padding: 2rem;
+  min-height: 36rem;
+  box-shadow: -7px 10px 14px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -7px 10px 14px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -7px 10px 14px -1px rgba(0, 0, 0, 0.75);
+}
+.input-form legend {
+  text-transform: capitalize;
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  padding-inline: 2rem;
+  /* padding-top: 1rem; */
+  text-align: center;
+}
+.fillContacts {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  background-color: var(--dark-blue);
+}
+.fillContacts label {
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: var(--lightblue-color);
+}
+.fillContacts input {
+  height: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  color: white;
+  margin: 1rem 0rem;
+  border: 2px solid white;
+  text-transform: capitalize;
+  font-family: var(--primary-font);
+  transition: all 2s;
+  background-color: var(--dark-green);
+  color: var(--white-color);
+}
+.input-form ::placeholder {
+  color: white;
+  font-family: var(--primary-font);
+}
+
+textarea {
+  border: 2px solid var(--gold-color);
+  max-width: 100%;
+  max-height: 10rem;
+  font-family: var(--primary-font);
+  background-color: var(--dark-green);
+  color: var(--white-color);
+  padding: 1rem;
+  color: white;
+  border: 2px solid white;
+}
+.btnSubmit {
+  background-color: var(--lightblue-color);
+  color: var(--blackish-color);
+  font-size: 1.5rem;
+  font-family: var(--primary-font);
+  margin-block: 2rem;
+  padding: 0.5rem;
+  border: none;
+  font-weight: 500;
+  border-radius: 10px;
+  text-transform: capitalize;
+  transition: all 1s ease;
+}
+.btnSubmit:hover {
+  background-color: var(--blackish-color);
+  color: white;
+  border: 2px solid var(--lightblue-color);
+}
+.companyDetails {
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: white;
+  color: var(--blackish-color);
+  display: flex;
+  text-transform: capitalize;
+  font-weight: 500;
+  flex-direction: column;
+  box-shadow: -7px 10px 14px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -7px 10px 14px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -7px 10px 14px -1px rgba(0, 0, 0, 0.75);
+}
+.companyDetails h2 {
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 1rem;
+}
+.detail1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* justify-content: center; */
+  gap: 2rem;
+  padding: 2rem;
+  font-family: var(--secondary-font);
+}
+.detail1 a {
+  text-decoration: none;
+  color: var(--blackish-color);
+}
+.detail1 svg {
+  font-size: 2rem;
+}
+@media screen and (max-width: 924px) {
+  .input-form {
+    min-width: 70%;
+  }
+}
+@media screen and (max-width: 308px) {
+  .detail1 {
+    width: 80vw;
+  }
+  .fillContacts legend {
+    font-size: 1rem;
+  }
+  .mapText p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .input-form {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 932px) {
+  .formContacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.map {
+  overflow: hidden;
+  /* position: relative; */
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+  align-items: center;
+  background-color: var(--gold-color);
+  justify-content: center;
+  height: 450px; /* Ensure the height is explicitly set */
+}
+.mapText {
+  background-color: white;
+  color: var(--blackish-color);
+  padding: 2rem;
+  box-shadow: -7px 10px 14px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -7px 10px 14px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -7px 10px 14px -1px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+.mapText p {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: var(--secondary-font);
+  font-weight: bold;
+}
+
+iframe {
+  /* left: 0;
+      top: 0; */
+  height: 100%;
+  width: 100%;
+  /* position: absolute; */
+  border: 0;
+  border-radius: 10px;
+}
+@media screen and (max-width: 588px) {
+  .map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
